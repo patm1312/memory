@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memoria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=ads_click" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="box_tittle">
+        <h1 class="bungee-spice-regular">Juego Memoria</h1>
+        <p class="bebas-neue-regular">Da click y  Diviertete 
+            <span class="material-symbols-outlined">
+                ads_click
+                </span>
+        </p>
+        <div id="container" class="grid-container">
+            <!-- Celdas individuales -->
+            <div id="1" data-value="Elemento 1" class="target grid-item 1">
+                1<img id="imagen1"  class="img img_1" src="assets/images/1.png" alt="">
+            </div>
+            <div id="2" data-value="Elemento 2" class="target grid-item 2">
+                2<img id="imagen1"  class="img img_1" src="assets/images/2.png" alt="">
+            </div>
+            <div id="3" data-value="Elemento 3" class="target grid-item 3">
+                3<img id="imagen1"  class="img img_1" src="assets/images/3.png" alt="">
+            </div>
+            <div id="4" data-value="Elemento 4" class="target grid-item 4">
+                4<img id="imagen1"  class="img img_1" src="assets/images/4.png" alt="">
+            </div>
+            <div id="5" data-value="Elemento 5" class="target grid-item 5">
+                5<img id="imagen1"  class="img img_1" src="assets/images/5.png" alt="">
+            </div>
+            <div id="6" data-value="Elemento 6" class="target grid-item 6">
+                6<img id="imagen1"  class="img img_1" src="assets/images/6.png" alt="">
+            </div>
+            <div id="7" data-value="Elemento 7" class="target grid-item 7">
+               7<img id="imagen1"  class="img img_1" src="assets/images/7.png" alt="">
+            </div>
+            <div id="8" data-value="Elemento 8" class="target grid-item 8">
+                8<img id="imagen1"  class="img img_1" src="assets/images/8.png" alt="">
+            </div>
+            <div id="9" data-value="Elemento 1" class="target grid-item 1">1
+                1a<img class="img img_1" src="assets/images/1.png" alt="">
+            </div>
+            <div id="10" data-value="Elemento 2" class="target grid-item 2">
+                2a<img id="imagen1"  class="img img_1" src="assets/images/2.png" alt="">
+            </div>
+            <div id="11" data-value="Elemento 3" class="target grid-item 3">
+                3a<img id="imagen1"  class="img img_1" src="assets/images/3.png" alt="">
+            </div>
+            <div id="12" data-value="Elemento 4" class="target grid-item 4">
+                4a<img id="imagen1"  class="img img_1" src="assets/images/4.png" alt="">
+            </div>
+            <div id="13" data-value="Elemento 5" class="target grid-item 5">
+                5a<img id="imagen1"  class="img img_1" src="assets/images/5.png" alt="">
+            </div>
+            <div id="14" data-value="Elemento 6" class="target grid-item 6">
+                6a<img id="imagen1"  class="img img_1" src="assets/images/6.png" alt="">
+            </div>
+            <div id="15" data-value="Elemento 7" class="target grid-item 7">
+                7a<img id="imagen1"  class="img img_1" src="assets/images/7.png" alt="">
+            </div>
+            <div id="16" data-value="Elemento 8" class="target grid-item 8">
+                8a<img id="imagen1"  class="img img_1" src="assets/images/8.png" alt="">
+            </div>
+            <!-- Repite las celdas hasta completar la cuadrícula -->
+          </div>
+          <div id="gameMessage" class="hidden"></div>
+          <div class="countdown" id="countdown"></div>
+              <!-- Button with FontAwesome icon -->
+            <button id="reorder" class="btn-style">
+                <i class="fas fa-play"></i> Start
+            </button>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta según la altura que desees */
+    background-color: #f0f0f0; /* Color de fondo del documento */
+  }
+  .container{
+    position: relative;
+  }
+.box_tittle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bungee-spice-regular {
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+}
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 800; /* Más grueso */
+    font-style: normal;
+    font-size: 2rem; /* Tamaño */
+    color: #ff69b4; /* Color divertido (rosa vibrante) */
+  }
+  
+  .material-symbols-outlined {
+    font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 68; /* Haz que coincida con el tamaño deseado */
+    font-size: 68px; /* Tamaño del ícono */
+    color: #ff5722; /* Color divertido */
+  }
+  .grid-container {
+
+    display: grid;
+    grid-template-columns: repeat(4, 6em); /* 12 columnas iguales */
+    grid-template-rows: repeat(4, 6em); /* 12 filas iguales */
+    gap: 1rem; /* Espacio entre las celdas */
+
+    padding: 10px;
+    background-color: #ffffff; /* Fondo del contenedor */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    margin: 0 auto; /* Centra horizontalmente */
+  }
+  
+  .grid-item {
+    background-color: #2196f3; /* Color de las celdas */
+    border-radius: 6px; /* Bordes redondeados en cada celda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px; /* Tamaño del texto */
+  }
+  .img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen al contenedor sin deformarse */
+    backface-visibility: hidden; /* Oculta la parte trasera de la imagen al voltear */
+  }
+  /* estilos para dar vuelta a imagen */
+  .flip-container {
+    perspective: 1000px; /* Da profundidad a la perspectiva 3D */
+  }
+  
+  .flip-card {
+    transform-style: preserve-3d;
+    transition: transform 0.6s; /* Duración de la transición */
+  }
+  
+  .flip-container .flip-card {
+    transform: rotateY(180deg); /* Voltea la tarjeta cuando se pasa el ratón */
+  }
+  /* Estilo para el botón */
+.btn-style {
+  margin: 10px;
+  background-color: #4CAF50;  /* Color de fondo verde */
+  color: white;               /* Color del texto */
+  border: none;               /* Sin bordes */
+  padding: 10px 20px;         /* Relleno del botón */
+  text-align: center;         /* Centrar texto */
+  font-size: 16px;            /* Tamaño de la fuente */
+  cursor: pointer;           /* Mostrar puntero al pasar el ratón */
+  border-radius: 5px;         /* Bordes redondeados */
+  display: flex;              /* Usamos flexbox para alinear íconos y texto */
+  align-items: center;        /* Centrar el contenido dentro del botón */
+  transition: background-color 0.3s ease;  /* Transición suave al pasar el ratón */
+}
+
+/* Estilo para el icono dentro del botón */
+.btn-style i {
+  margin-right: 8px;  /* Espacio entre el icono y el texto */
+}
+
+/* Cambio de color al pasar el ratón */
+.btn-style:hover {
+  background-color: #45a049; /* Color de fondo más oscuro */
+}
+.countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem; /* Tamaño grande para los números */
+  font-weight: bold;
+  color: #ff5722; /* Color para los números */
+  position: absolute; /* Posicionamiento para que esté centrado */
+  top: 50%; /* Centrado verticalmente */
+  left: 50%; /* Centrado horizontalmente */
+  transform: translate(-50%, -50%); /* Ajuste para centrar correctamente */
+  font-family: 'Bebas Neue', sans-serif; /* Fuente divertida */
+}
+
+.countdown.complete {
+  font-size: 3rem; /* Tamaño más pequeño para el mensaje */
+  color: #4caf50; /* Color verde para el mensaje */
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: bolder; /* Fuente más gruesa */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con opacidad */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para darle más contraste */
+  text-align: center;
+}
+
+.countdown.complete i {
+  font-size: 2.5rem; /* Tamaño del icono */
+  margin-left: 10px; /* Espacio entre el texto y el icono */
+}
+
+
+#countdown-message {
+  display: none; /* Inicialmente oculto */
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffbc24;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+#countdown-message i {
+  font-size: 3rem;
+  margin-left: 10px;
+}
+#gameMessage {
+  font-size: 2rem;
+  color: #fff;
+  background-color: #4caf50;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  width: 60%;
+  margin: 20px auto;
+  font-weight: bold;
+}
+
+#gameMessage i {
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
