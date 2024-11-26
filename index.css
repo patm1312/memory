@@ -55,7 +55,7 @@ body {
   }
   
   .grid-item {
-    
+    border: 1px solid blue;
     border-radius: 6px; /* Bordes redondeados en cada celda */
     display: flex;
     justify-content: center;
